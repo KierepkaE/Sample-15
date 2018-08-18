@@ -1,15 +1,26 @@
-//
-//  main.cpp
-//  Cookies
-//
-//  Created by ravnensvinger on 18.08.2018.
-//  Copyright © 2018 KierepkaE. All rights reserved.
-//
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int friends, cookies;
+
+int main()
+{
+    cout << "How many friends are coming? ";
+    cin >> friends;
+    
+    cout << "How many cookies do you have? ";
+    
+    cin >> cookies;
+    
+    int x = cookies / (friends - 1);
+    
+    cout << "Cookies for each friend:" << x ;
+    
+    int y = cookies - x * (friends - 1);
+    cout << "Cookies for me:  " << y;
+    
     return 0;
 }
+
